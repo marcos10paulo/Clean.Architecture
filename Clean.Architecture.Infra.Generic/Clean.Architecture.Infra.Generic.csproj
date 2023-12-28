@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clean.Architecture.Application\Clean.Architecture.Application.csproj" />
+    <ProjectReference Include="..\Clean.Architecture.Domain.Validation\Clean.Architecture.Domain.Validation.csproj" />
+    <ProjectReference Include="..\Clean.Architecture.Domain\Clean.Architecture.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
