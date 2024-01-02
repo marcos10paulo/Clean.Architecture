@@ -1,5 +1,4 @@
 ﻿using Clean.Architecture.Domain.Entities.InvoiceEntity;
-using Clean.Architecture.Domain.Entities.UserEntity;
 using Clean.Architecture.Domain.Validation.ErrorBase;
 using System.Text.Json.Serialization;
 
@@ -12,7 +11,7 @@ namespace Clean.Architecture.Domain.Entities.InvoiceItemEntity
         public int InvoiceId { get; private set; }
 
         [JsonIgnore]
-        public Invoice Invoice { get; set; }
+        public virtual Invoice Invoice { get; set; }
 
         public InvoiceItem() { }
 

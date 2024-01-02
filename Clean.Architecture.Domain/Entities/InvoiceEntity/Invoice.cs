@@ -6,9 +6,12 @@ namespace Clean.Architecture.Domain.Entities.InvoiceEntity
     public class Invoice : BaseEntity
     {
         public DateTime Date {  get; private set; }
-        public ICollection<InvoiceItem> InvoiceItems { get; private set; }
+        public virtual ICollection<InvoiceItem> InvoiceItems { get; private set; }
 
-        public Invoice() { }
+        public Invoice() 
+        { 
+            InvoiceItems = new HashSet<InvoiceItem>();
+        }
 
         private Invoice(DateTime date, ICollection<InvoiceItem> invoiceItems)
         {

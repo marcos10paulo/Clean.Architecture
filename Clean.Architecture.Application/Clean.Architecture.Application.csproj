@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Clean.Architecture.Contracts.Validators\Clean.Architecture.Contracts.Validators.csproj" />
     <ProjectReference Include="..\Clean.Architecture.Contracts\Clean.Architecture.Contracts.csproj" />
     <ProjectReference Include="..\Clean.Architecture.Domain.Validation\Clean.Architecture.Domain.Validation.csproj" />
     <ProjectReference Include="..\Clean.Architecture.Domain\Clean.Architecture.Domain.csproj" />
